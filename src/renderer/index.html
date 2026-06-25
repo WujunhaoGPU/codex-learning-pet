@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex Learning Pet</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="panel" class="panel" data-status="waiting">
+      <header class="header">
+        <div class="session">
+          <strong id="session-name" class="session-name">未绑定会话</strong>
+          <span id="session-time" class="session-time">更新时间未知</span>
+        </div>
+        <div class="topbar-actions">
+          <label class="lock-toggle">
+            <span>跟随</span>
+            <input id="follow-latest" type="checkbox" />
+            <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+          </label>
+          <label class="lock-toggle">
+            <span>锁定</span>
+            <input id="route-lock" type="checkbox" />
+            <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+          </label>
+          <div class="knowledge-actions">
+            <button id="knowledge-file" class="topbar-button" type="button">知识点</button>
+            <button id="save-round" class="topbar-button" type="button">保存</button>
+          </div>
+        </div>
+      </header>
+      <nav class="tabs" aria-label="面板视图">
+        <button id="route-tab" class="tab" type="button">路线</button>
+        <button id="status-tab" class="tab" type="button">状态</button>
+      </nav>
+      <section id="route-view" class="view">
+        <div class="route-head">
+          <label>当前路线</label>
+          <span id="route-progress" class="route-progress"></span>
+        </div>
+        <div id="route" class="route-list"></div>
+      </section>
+      <section id="status-view" class="view" hidden>
+        <div class="status-card step-card">
+          <label>当前一步</label>
+          <p id="step"></p>
+        </div>
+        <div class="status-card knowledge-card">
+          <label>最新知识点</label>
+          <p id="knowledge"></p>
+        </div>
+        <div class="status-card goal-card">
+          <label>当前目标</label>
+          <p id="goal"></p>
+        </div>
+        <p id="next-hint" class="next-hint"></p>
+      </section>
+    </main>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

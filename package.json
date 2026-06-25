@@ -1,0 +1,30 @@
+{
+  "name": "codex-learning-pet",
+  "version": "0.1.0",
+  "description": "Always-on-top Codex learning companion powered by codex app-server events.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WujunhaoGPU/codex-learning-pet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WujunhaoGPU/codex-learning-pet/issues"
+  },
+  "homepage": "https://github.com/WujunhaoGPU/codex-learning-pet#readme",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node tests/reducer.test.js && node tests/state.test.js && node tests/event-flow.test.js",
+    "acceptance:issue-flow": "node scripts/acceptance-issue-flow.js",
+    "acceptance:current-state": "node scripts/acceptance-current-state.js",
+    "build:mac": "node scripts/build-mac.js",
+    "doctor": "node scripts/doctor.js",
+    "smoke:codex-bin": "node scripts/smoke-codex-bin.js",
+    "smoke:app-server": "node scripts/smoke-app-server.js",
+    "smoke:window": "node scripts/smoke-window.js",
+    "smoke:packaged": "node scripts/smoke-packaged.js"
+  },
+  "devDependencies": {
+    "electron": "^42.5.0"
+  }
+}

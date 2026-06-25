@@ -1,0 +1,7 @@
+node_modules/
+learning-state.json
+dist/
+notes/
+.superpowers/
+mockups/
+*.log
