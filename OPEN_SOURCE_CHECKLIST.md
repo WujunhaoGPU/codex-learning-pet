@@ -10,6 +10,7 @@ Before publishing:
 - [ ] Run `npm run doctor`.
 - [ ] Create the GitHub repository.
 - [ ] Push the initial commit.
+- [ ] Document or publish the companion skill.
 - [ ] Add screenshots or a short demo GIF after private content is removed.
 
 Recommended repository description:

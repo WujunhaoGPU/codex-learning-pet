@@ -17,6 +17,7 @@ npm start
 - `src/reducer.js`: converts Codex events into learning status.
 - `src/state.js`: persists `learning-state.json`.
 - `src/renderer/*`: floating pet UI.
+- `skills/issue-learning-pet/SKILL.md`: public companion skill for Codex replies.
 
 ## Known Risks
 

@@ -119,6 +119,22 @@ Notes are written under:
 ~/Library/Application Support/Codex Learning Pet/notes/YYYY-MM-DD/thread-name-shortid.md
 ```
 
+## Companion Skill
+
+This repo includes a public companion skill at:
+
+```text
+skills/issue-learning-pet/SKILL.md
+```
+
+It is a small, open-source workflow extracted for this app. It tells Codex how
+to keep replies step-focused and how to emit `PET_UPDATE` / `ROUTE_UPDATE`
+blocks for the desktop panel.
+
+It is not the private `learning-coach` skill. You can copy or install this
+companion skill into your Codex skills directory if you want Codex to drive the
+panel more consistently during issue-learning sessions.
+
 ## Privacy
 
 This app runs locally. It reads local Codex thread data through `codex
